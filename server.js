@@ -8,7 +8,7 @@ const app = express();
 
 const allowedOrigins = [
     "http://localhost:3000",
-    "https://todo-frontend-topaz-mu.vercel.app/"
+    "https://todo-frontend-topaz-mu.vercel.app"
 ];
 // Middleware
 app.use(cors({
