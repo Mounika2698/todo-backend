@@ -8,13 +8,15 @@ const app = express();
 
 const allowedOrigins = [
     "http://localhost:3000",
-    "https://your-vercel-app.vercel.app" // Replace with your Vercel URL later
+    "https://todo-frontend-topaz-mu.vercel.app/"
 ];
 // Middleware
 app.use(cors({
     origin: allowedOrigins,
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
+
 app.use(express.json());
 
 // Routes
